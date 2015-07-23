@@ -8,10 +8,8 @@ import java.util.Map;
 Вывести на экран список значений, каждый элемент с новой строки.
 */
 
-public class Solution
-{
-    public static void main(String[] args) throws Exception
-    {
+public class Solution {
+    public static void main(String[] args) throws Exception {
         HashMap<String, String> map = new HashMap<String, String>();
         map.put("Sim", "Sim");
         map.put("Tom", "Tom");
@@ -27,10 +25,8 @@ public class Solution
         printValues(map);
     }
 
-    public static void printValues(Map<String, String> map)
-    {
-        for (Map.Entry<String, String> pair : map.entrySet())
-        {
+    public static void printValues(Map<String, String> map) {
+        for (Map.Entry<String, String> pair : map.entrySet()) {
             String value = pair.getValue();
             System.out.println(value);
         }

@@ -19,7 +19,7 @@ public class Solution {
 
     public static Drink getDeliciousDrink() {
         return new Wine();
-        
+
     }
 
 

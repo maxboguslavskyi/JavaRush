@@ -8,10 +8,8 @@ package com.javarush.test.level05.lesson12.home02;
 5. Объекты выведи на экран в таком формате [name + " " + age + " " + address].
 */
 
-public class Solution
-{
-    public static void main(String[] args)
-    {
+public class Solution {
+    public static void main(String[] args) {
         Man man1 = new Man("", 21, "");
         Man man2 = new Man("", 22, "");
 
@@ -33,6 +31,7 @@ public class Solution
 
         }
     }
+
     public static class Woman {
         String name;
         int age;

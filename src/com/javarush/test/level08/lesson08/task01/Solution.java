@@ -7,10 +7,8 @@ import java.util.Set;
 Создать множество строк (Set<String>), занести в него 20 слов на букву «Л».
 */
 
-public class Solution
-{
-    public static HashSet<String> createSet()
-    {
+public class Solution {
+    public static HashSet<String> createSet() {
         HashSet<String> set = new HashSet<String>();
         set.add("Лама");
         set.add("Лапа");

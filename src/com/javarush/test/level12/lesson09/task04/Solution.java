@@ -5,95 +5,77 @@ package com.javarush.test.level12.lesson09.task04;
 Добавь эти интерфейсы классам Human(человек), Duck(утка), Penguin(пингвин), Airplane(самолет).
 */
 
-public class Solution
-{
-    public static void main(String[] args)
-    {
+public class Solution {
+    public static void main(String[] args) {
 
     }
 
-    public interface Fly
-    {
+    public interface Fly {
         public void fly();
     }
 
-    public interface Run
-    {
+    public interface Run {
         public void run();
     }
 
-    public interface Swim
-    {
+    public interface Swim {
         public void swim();
     }
 
 
-    public class Human implements Run, Swim
-    {
+    public class Human implements Run, Swim {
 
         @Override
-        public void run()
-        {
+        public void run() {
 
         }
 
         @Override
-        public void swim()
-        {
+        public void swim() {
 
         }
     }
 
-    public class Duck implements Run, Swim, Fly
-    {
+    public class Duck implements Run, Swim, Fly {
 
         @Override
-        public void fly()
-        {
+        public void fly() {
 
         }
 
         @Override
-        public void run()
-        {
+        public void run() {
 
         }
 
         @Override
-        public void swim()
-        {
+        public void swim() {
 
         }
     }
 
-    public class Penguin implements Run, Swim
-    {
+    public class Penguin implements Run, Swim {
 
         @Override
-        public void run()
-        {
+        public void run() {
 
         }
 
         @Override
-        public void swim()
-        {
+        public void swim() {
 
         }
     }
 
-    public class Airplane implements Fly, Run
-    {
+    public class Airplane implements Fly, Run {
 
         @Override
-        public void fly()
-        {
+        public void fly() {
 
         }
 
         @Override
-        public void run()
-        {
+        public void run() {
 
         }
     }

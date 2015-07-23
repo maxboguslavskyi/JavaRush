@@ -12,7 +12,7 @@ public class Solution {
 
     static {
         for (int i = 0; i < 5; i++) {
-            labels.put((double)i, "ff" + i);
+            labels.put((double) i, "ff" + i);
         }
     }
 

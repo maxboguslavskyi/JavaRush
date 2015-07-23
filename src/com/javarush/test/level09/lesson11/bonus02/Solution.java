@@ -9,10 +9,8 @@ import java.io.*;
 программа должна вывести надпись «Файл не существует.» и еще раз прочитать имя файла с консоли, а уже потом считывать файл для записи.
 */
 
-public class Solution
-{
-    public static void main(String[] args) throws IOException
-    {
+public class Solution {
+    public static void main(String[] args) throws IOException {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         FileInputStream fileInputStream;
 
@@ -23,9 +21,7 @@ public class Solution
                 fileInputStream = new FileInputStream(sourceFileName);
                 break;
                 //Если указанный в ком. строке файл есть, то цикл прерываем
-            }
-            catch (Exception e)
-            {
+            } catch (Exception e) {
                 System.out.println("Файл не существует.");
                 String sourceFileName = reader.readLine();
                 fileInputStream = new FileInputStream(sourceFileName);
@@ -37,8 +33,7 @@ public class Solution
         FileOutputStream fileOutputStream = new FileOutputStream(destinationFileName);
 
         //пока есть биты в файле, открытом на чтение, продолжаем цикл
-        while (fileInputStream.available() > 0)
-        {
+        while (fileInputStream.available() > 0) {
             int data = fileInputStream.read();
             fileOutputStream.write(data);
         }

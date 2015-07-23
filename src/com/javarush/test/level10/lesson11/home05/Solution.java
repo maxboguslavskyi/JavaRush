@@ -15,34 +15,27 @@ import java.util.ArrayList;
 я 9
 */
 
-public class Solution
-{
-    public static void main(String[] args)  throws Exception
-    {
+public class Solution {
+    public static void main(String[] args) throws Exception {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
         //алфавит
         ArrayList<Character> alphabet = new ArrayList<Character>();
-        for (int i = 0; i < 32; i++)
-        {
+        for (int i = 0; i < 32; i++) {
             alphabet.add((char) ('а' + i));
         }
         alphabet.add(6, 'ё');
 
         //ввод строк
         ArrayList<String> list = new ArrayList<String>();
-        for (int i = 0; i < 10; i++)
-        {
+        for (int i = 0; i < 10; i++) {
             String s = reader.readLine();
             list.add(s.toLowerCase());
         }
         int count = 0;
-        for (char abs : alphabet)
-        {
-            for (String lonelyString : list)
-            {
-                for (char symbol : lonelyString.toCharArray())
-                {
+        for (char abs : alphabet) {
+            for (String lonelyString : list) {
+                for (char symbol : lonelyString.toCharArray()) {
                     if (abs == symbol) count++;
                 }
             }

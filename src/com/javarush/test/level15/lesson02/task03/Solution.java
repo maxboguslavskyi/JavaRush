@@ -38,6 +38,7 @@ public class Solution {
             System.out.println(Constants.WANT_STRING + Constants.LUXURIOUS_CAR);
         }
     }
+
     public static class CheapCar {
         protected void printlnDesire() {
             System.out.println(Constants.WANT_STRING + Constants.CHEAP_CAR);

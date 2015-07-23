@@ -11,10 +11,8 @@ import java.util.Collections;
 3. Используя цикл for вывести результат на экран, каждый элемент списка с новой строки.
 */
 
-public class Solution
-{
-    public static void main(String[] args) throws Exception
-    {
+public class Solution {
+    public static void main(String[] args) throws Exception {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         ArrayList<String> list = new ArrayList<String>();
 

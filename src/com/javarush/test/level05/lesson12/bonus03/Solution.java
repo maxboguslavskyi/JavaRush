@@ -10,26 +10,24 @@ import java.io.InputStreamReader;
 3. выводит на экран максимальное из введенных N чисел.
 */
 
-public class Solution
-{
-    public static void main(String[] args) throws Exception
-    {
+public class Solution {
+    public static void main(String[] args) throws Exception {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         int N = Integer.parseInt(reader.readLine()); //считываем n
         int maximum = 0; //инициализируем число maximum
 
-        for (int i = 0; i<N; i++){ //входим в цикл по числу n
+        for (int i = 0; i < N; i++) { //входим в цикл по числу n
 
             //считываем число с консоли
             int temp = Integer.parseInt(reader.readLine());
 
             //если это нулевой цикл, то присваиваем числу
             //maximum значение считанного числа
-            if (i==0) maximum=temp;
+            if (i == 0) maximum = temp;
 
                 //в дальнейшем значение присваиваем только если
                 //число с консоли больше maximum
-            else if (temp>maximum) maximum=temp;
+            else if (temp > maximum) maximum = temp;
         }
 
         System.out.println(maximum);

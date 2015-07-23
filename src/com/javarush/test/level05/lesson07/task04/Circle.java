@@ -7,14 +7,15 @@ package com.javarush.test.level05.lesson07.task04;
 - centerX, centerY, radius, width, color
 */
 
-public class Circle
-{
+public class Circle {
     public void initialize(int centerX, int centerY, int radius) {
 
     }
+
     public void initialize(int centerX, int centerY, int radius, int width) {
 
     }
+
     public void initialize(int centerX, int centerY, int radius, int width, String color) {
 
     }

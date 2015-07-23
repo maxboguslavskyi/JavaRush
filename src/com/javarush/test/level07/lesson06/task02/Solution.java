@@ -11,10 +11,8 @@ package com.javarush.test.level07.lesson06.task02;
 
 import java.util.ArrayList;
 
-public class Solution
-{
-    public static void main(String[] args) throws Exception
-    {
+public class Solution {
+    public static void main(String[] args) throws Exception {
         ArrayList<String> list = new ArrayList<String>();
         list.add("101");
         list.add("102");
@@ -26,8 +24,7 @@ public class Solution
         list.remove(1);
         list.remove(2);
 
-        for (int i = 0; i < list.size(); i++)
-        {
+        for (int i = 0; i < list.size(); i++) {
             System.out.println(list.get(i));
         }
         System.out.println(list.size());

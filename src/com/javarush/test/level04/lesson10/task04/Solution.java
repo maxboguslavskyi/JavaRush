@@ -5,13 +5,11 @@ package com.javarush.test.level04.lesson10.task04;
 Буквы в одной строке не разделять.
 */
 
-public class Solution
-{
-    public static void main(String[] args) throws Exception
-    {
+public class Solution {
+    public static void main(String[] args) throws Exception {
         String s = "SSSSSSSSSS";
         int k = 0;
-        while(k < 10) {
+        while (k < 10) {
             System.out.println(s);
             k++;
         }

@@ -13,31 +13,30 @@ public class Solution {
     public interface Fly {
         void fly();
     }
+
     public interface Climb {
         void climb();
     }
+
     public interface Run {
         void run();
     }
 
     public class Cat implements Climb, Run {
         @Override
-        public void climb()
-        {
+        public void climb() {
 
         }
 
         @Override
-        public void run()
-        {
+        public void run() {
 
         }
     }
 
     public class Dog implements Run {
         @Override
-        public void run()
-        {
+        public void run() {
 
         }
     }
@@ -47,14 +46,12 @@ public class Solution {
 
     public class Duck implements Fly, Run {
         @Override
-        public void fly()
-        {
+        public void fly() {
 
         }
 
         @Override
-        public void run()
-        {
+        public void run() {
 
         }
     }

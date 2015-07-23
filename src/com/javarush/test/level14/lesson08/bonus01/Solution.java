@@ -11,28 +11,22 @@ import java.util.concurrent.TimeoutException;
 Первое исключение уже реализовано в методе initExceptions.
 */
 
-public class Solution
-{
+public class Solution {
     public static List<Exception> exceptions = new ArrayList<Exception>();
 
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         initExceptions();
 
-        for (Exception exception : exceptions)
-        {
+        for (Exception exception : exceptions) {
             System.out.println(exception);
         }
     }
 
-    private static void initExceptions()
-    {   //it's first exception
-        try
-        {
+    private static void initExceptions() {   //it's first exception
+        try {
             float i = 1 / 0;
 
-        } catch (Exception e)
-        {
+        } catch (Exception e) {
             exceptions.add(e);
         }
 

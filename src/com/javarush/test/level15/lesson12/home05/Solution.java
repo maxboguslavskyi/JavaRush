@@ -11,17 +11,40 @@ import java.math.BigDecimal;
 
 public class Solution {
 
-    public Solution() {}
-    public Solution(int s) {}
-    public Solution(short s) {}
-    protected Solution (Integer s) {}
-    protected Solution (Double s) {}
-    protected Solution (double s) {}
-    private Solution (byte s) {}
-    private Solution (long s) {}
-    private Solution (float s) {}
-    Solution (BigDecimal s) {}
-    Solution (Float s) {}
-    Solution (Object s) {}
+    public Solution() {
+    }
+
+    public Solution(int s) {
+    }
+
+    public Solution(short s) {
+    }
+
+    protected Solution(Integer s) {
+    }
+
+    protected Solution(Double s) {
+    }
+
+    protected Solution(double s) {
+    }
+
+    private Solution(byte s) {
+    }
+
+    private Solution(long s) {
+    }
+
+    private Solution(float s) {
+    }
+
+    Solution(BigDecimal s) {
+    }
+
+    Solution(Float s) {
+    }
+
+    Solution(Object s) {
+    }
 }
 

@@ -8,10 +8,8 @@ package com.javarush.test.level13.lesson11.home04;
 
 import java.io.*;
 
-public class Solution
-{
-    public static void main(String[] args) throws IOException
-    {
+public class Solution {
+    public static void main(String[] args) throws IOException {
         //Открываем поток, считывающий имя файла.
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         String fileName = reader.readLine();
@@ -19,14 +17,12 @@ public class Solution
         //Открываем исходящий поток в указанное имя файла
         FileOutputStream fileOutputStream = new FileOutputStream(fileName);
 
-        while (true)
-        {
+        while (true) {
             //Считываем строку
             String s = reader.readLine();
 
             //если строка содержит exit, то записываем эту строку в файл и закрываем цикл
-            if (s.equals("exit"))
-            {
+            if (s.equals("exit")) {
                 //записываем в файл преобразованные в байты значения
                 fileOutputStream.write(s.getBytes());
                 break;
@@ -34,9 +30,8 @@ public class Solution
 
             //иначе (не содержит exit) - записываем в файл преобразованные в байты значения
             //обязательно присоединяем к строке пробел и перевод строки
-            else
-            {
-                fileOutputStream.write((s+"\r\n").getBytes());
+            else {
+                fileOutputStream.write((s + "\r\n").getBytes());
             }
         }
 

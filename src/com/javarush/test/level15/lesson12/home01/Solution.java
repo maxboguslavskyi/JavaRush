@@ -20,9 +20,9 @@ public class Solution {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         ArrayList<String> list = new ArrayList<String>();
         String input;
-        while(true){
+        while (true) {
             input = reader.readLine();
-            if(input.equals("exit")){
+            if (input.equals("exit")) {
                 break;
             }
 
@@ -30,20 +30,20 @@ public class Solution {
         }
 
 
-        for(String val : list){
-            if(val.contains(".")){
+        for (String val : list) {
+            if (val.contains(".")) {
                 print(Double.valueOf(val));
             } else {
-                try{
+                try {
                     Integer in = Integer.valueOf(val);
-                    if(in > 0 && in < 128){
+                    if (in > 0 && in < 128) {
                         print(Short.valueOf(val));
-                    } else if(in >= 128){
+                    } else if (in >= 128) {
                         print(in);
                     } else {
                         print(val);
                     }
-                } catch (NumberFormatException e){
+                } catch (NumberFormatException e) {
                     print(val);
                 }
             }

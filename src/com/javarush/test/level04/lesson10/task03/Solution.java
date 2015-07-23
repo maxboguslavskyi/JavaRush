@@ -14,10 +14,8 @@ import java.io.InputStreamReader;
 абв
 */
 
-public class Solution
-{
-    public static void main(String[] args) throws Exception
-    {
+public class Solution {
+    public static void main(String[] args) throws Exception {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
         String s1 = br.readLine();
@@ -25,7 +23,7 @@ public class Solution
 
         int i = 0;
 
-        while(i < n1) {
+        while (i < n1) {
             System.out.println(s1);
             i++;
 

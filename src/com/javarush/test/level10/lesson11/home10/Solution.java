@@ -1,4 +1,4 @@
- package com.javarush.test.level10.lesson11.home10;
+package com.javarush.test.level10.lesson11.home10;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
@@ -10,15 +10,12 @@ int safeGetElement(ArrayList<Integer> list, int index, int defaultValue)
 Метод должен возвращать элемент списка (list) по его индексу (index). Если в процессе получения элемента возникло исключение, его нужно перехватить, и метод должен вернуть defaultValue.
 */
 
-public class Solution
-{
-    public static void main(String[] args) throws Exception
-    {
+public class Solution {
+    public static void main(String[] args) throws Exception {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
         ArrayList<Integer> list = new ArrayList<Integer>();
-        for (int i = 0; i < 20; i++)
-        {
+        for (int i = 0; i < 20; i++) {
             int x = Integer.parseInt(reader.readLine());
             list.add(x);
         }
@@ -28,15 +25,11 @@ public class Solution
         System.out.println(safeGetElement(list, -5, 9));
     }
 
-    public static int safeGetElement(ArrayList<Integer> list, int index, int defaultValue)
-    {
+    public static int safeGetElement(ArrayList<Integer> list, int index, int defaultValue) {
         int value;
-        try
-        {
+        try {
             value = list.get(index);
-        }
-        catch (Exception e)
-        {
+        } catch (Exception e) {
             value = defaultValue;
         }
         return value;

@@ -19,8 +19,7 @@ public class Solution {
         //add your code here - добавь код тут
 
         Thread.sleep(3500);
-        if (clock.isAlive())
-        {
+        if (clock.isAlive()) {
             clock.interrupt();
         }
 
@@ -35,18 +34,16 @@ public class Solution {
 
         public void run() {
             //add your code here - добавь код тут
-            try{
+            try {
                 long startTime = System.currentTimeMillis();
-                while (countSeconds > 0)
-                {
+                while (countSeconds > 0) {
                     System.out.print(countSeconds + " ");
                     Thread.sleep(1000);
                     countSeconds--;
 
                 }
                 System.out.println("Марш!");
-            }catch (InterruptedException e)
-            {
+            } catch (InterruptedException e) {
                 System.out.println("Прервано!");
             }
         }

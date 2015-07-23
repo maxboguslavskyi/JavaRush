@@ -9,15 +9,13 @@ package com.javarush.test.level05.lesson05.task02;
 если cat1.fight(cat2) = true , то cat2.fight(cat1) = false
 */
 
-public class Cat
-{
+public class Cat {
     public String name;
     public int age;
     public int weight;
     public int strength;
 
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         Cat cat1 = new Cat();
         cat1.age = 10;
         cat1.strength = 20;
@@ -30,20 +28,17 @@ public class Cat
 
         cat1.fight(cat2);
     }
-    public Cat()
-    {
+
+    public Cat() {
         this.age = age;
         this.weight = weight;
         this.strength = strength;
     }
 
-    public boolean fight (Cat anotherCat)
-    {
+    public boolean fight(Cat anotherCat) {
 
-        if(this.strength > anotherCat.strength)
-        {
+        if (this.strength > anotherCat.strength) {
             return true;
-        }
-        else return false;
+        } else return false;
     }
 }

@@ -11,10 +11,8 @@ import java.util.Set;
 4. Реализовать метод printCats, он должен вывести на экран всех котов, которые остались во множестве. Каждый кот с новой строки.
 */
 
-public class Solution
-{
-    public static void main(String[] args)
-    {
+public class Solution {
+    public static void main(String[] args) {
         Set<Cat> cats = createCats();
         Iterator<Cat> it = cats.iterator();
         if (it.hasNext())
@@ -22,18 +20,15 @@ public class Solution
         printCats(cats);
     }
 
-    public static Set<Cat> createCats()
-    {
+    public static Set<Cat> createCats() {
         Set<Cat> cats = new HashSet<Cat>();
-        for (int i = 0; i < 3; i++)
-        {
+        for (int i = 0; i < 3; i++) {
             cats.add(new Cat());
         }
         return cats;
     }
 
-    public static void printCats(Set<Cat> cats)
-    {
+    public static void printCats(Set<Cat> cats) {
         for (Cat cat : cats) {
             System.out.println(cat);
         }

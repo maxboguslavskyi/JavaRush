@@ -5,25 +5,20 @@ package com.javarush.test.level11.lesson06.task04;
 Унаследовать управляющего, директора и секретаря от сотрудника.
 */
 
-public class Solution
-{
-    public class Manager extends Worker
-    {
+public class Solution {
+    public class Manager extends Worker {
 
     }
 
-    public class Chief extends Worker
-    {
+    public class Chief extends Worker {
 
     }
 
-    public class Worker
-    {
+    public class Worker {
 
     }
 
-    public class Secretary extends Worker
-    {
+    public class Secretary extends Worker {
 
     }
 }

@@ -8,23 +8,18 @@ import java.awt.*;
 3. Методы удалять нельзя!
 */
 
-public class Solution
-{
-    public static void main(String[] args) throws Exception
-    {
+public class Solution {
+    public static void main(String[] args) throws Exception {
     }
 
-    public interface Animal
-    {
+    public interface Animal {
         Color getColor();
 
         Integer getAge();
     }
 
-    public abstract static class Fox implements Animal
-    {
-        public String getName()
-        {
+    public abstract static class Fox implements Animal {
+        public String getName() {
             return "Fox";
         }
     }

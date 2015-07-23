@@ -37,8 +37,9 @@ public class Solution {
             String markTwainOutput = getBook().getName() + " book was written by " + author;
 
             String output = "output";
-            if (this instanceof MarkTwainBook) {output = markTwainOutput;}
-            else output = agathaChristieOutput;//Add your code here
+            if (this instanceof MarkTwainBook) {
+                output = markTwainOutput;
+            } else output = agathaChristieOutput;//Add your code here
 
             return output;
         }
@@ -52,21 +53,18 @@ public class Solution {
 
         public String bookName = null;
 
-        public MarkTwainBook(String bookName)
-        {
+        public MarkTwainBook(String bookName) {
             super("Mark Twain");
             this.bookName = bookName;
         }
 
         @Override
-        public MarkTwainBook getBook()
-        {
+        public MarkTwainBook getBook() {
             return this;
         }
 
         @Override
-        public String getName()
-        {
+        public String getName() {
             return this.bookName;
         }
     }
@@ -75,21 +73,18 @@ public class Solution {
 
         public String bookName = null;
 
-        public AgathaChristieBook(String bookName)
-        {
+        public AgathaChristieBook(String bookName) {
             super("Agatha Christie");
             this.bookName = bookName;
         }
 
         @Override
-        public AgathaChristieBook getBook()
-        {
+        public AgathaChristieBook getBook() {
             return this;
         }
 
         @Override
-        public String getName()
-        {
+        public String getName() {
             return this.bookName;
         }
     }

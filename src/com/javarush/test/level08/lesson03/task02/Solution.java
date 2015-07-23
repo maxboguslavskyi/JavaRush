@@ -13,10 +13,8 @@ import com.javarush.test.level06.lesson08.task05.StringHelper;
 import java.util.HashMap;
 import java.util.Map;
 
-public class Solution
-{
-    public static void main(String[] args) throws Exception
-    {
+public class Solution {
+    public static void main(String[] args) throws Exception {
         Map<String, String> map = new HashMap<String, String>();
         map.put("арбуз", "ягода");
         map.put("банан", "трава");

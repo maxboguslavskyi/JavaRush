@@ -33,17 +33,20 @@ public class Solution {
 
     public static class Finger extends BodyPart {
         private boolean isFoot;
+
         public Finger(String name, boolean isFoot) {
             super(name);
             this.isFoot = isFoot;
         }
 
         public Object containsBones() {
-            if (super.containsBones().equals("Yes") && !isFoot ) {return "Yes";} else return "No";
+            if (super.containsBones().equals("Yes") && !isFoot) {
+                return "Yes";
+            } else return "No";
         }
     }
-    public static void main(String[] args)
-    {
+
+    public static void main(String[] args) {
         printlnFingers();
         printlnBodyParts();
         printlnAlives();

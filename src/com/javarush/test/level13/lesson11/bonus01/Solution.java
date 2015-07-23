@@ -21,10 +21,8 @@ import java.io.*;
 import java.util.ArrayList;
 import java.util.Collections;
 
-public class Solution
-{
-    public static void main(String[] args) throws IOException
-    {
+public class Solution {
+    public static void main(String[] args) throws IOException {
         //открываем поток для чтения имени файла
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         String fileName = reader.readLine();
@@ -39,7 +37,7 @@ public class Solution
         while (inputStream.ready()) //пока данные читаются
         {
             int i = Integer.parseInt(inputStream.readLine());
-            if (i%2==0) list.add(i);
+            if (i % 2 == 0) list.add(i);
         }
 
         Collections.sort(list); //сортируем

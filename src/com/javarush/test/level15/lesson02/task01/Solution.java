@@ -20,14 +20,12 @@ public class Solution {
 
     public static class Clothes implements Sellable, Discountable {
         @Override
-        public Object getAllowedAction()
-        {
+        public Object getAllowedAction() {
             return null;
         }
 
         @Override
-        public Object getAllowedAction(String name)
-        {
+        public Object getAllowedAction(String name) {
             return null;
         }
     }

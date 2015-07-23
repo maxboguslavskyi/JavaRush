@@ -8,13 +8,11 @@ float c = (a / (double)b);
 double d = a * 1e-3;
 */
 
-public class Solution
-{
-    public static void main(String[] args)
-    {
+public class Solution {
+    public static void main(String[] args) {
         int a = 15;
         int b = 4;
-        float c = (float)(a / (double)b);
+        float c = (float) (a / (double) b);
         double d = a * 1e-3;
 
         System.out.println(c + d);

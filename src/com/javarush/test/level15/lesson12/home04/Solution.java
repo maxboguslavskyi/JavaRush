@@ -25,8 +25,7 @@ public class Solution {
 
     public static void readKeyFromConsoleAndInitPlanet() {
 
-        try
-        {
+        try {
             BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
             String s = reader.readLine();
             if (s.equals(Planet.SUN))
@@ -35,9 +34,7 @@ public class Solution {
                 thePlanet = Moon.getInstance();
             else if (s.equals(Planet.EARTH))
                 thePlanet = Earth.getInstance();
-        }
-        catch (IOException e)
-        {
+        } catch (IOException e) {
             e.printStackTrace();
         }
     }

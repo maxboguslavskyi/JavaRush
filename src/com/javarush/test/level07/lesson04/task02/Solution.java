@@ -9,18 +9,14 @@ import java.io.InputStreamReader;
 3. Вывести содержимое всего массива (10 элементов) на экран в обратном порядке. Каждый элемент - с новой строки.
 */
 
-public class Solution
-{
-    public static void main(String[] args) throws Exception
-    {
+public class Solution {
+    public static void main(String[] args) throws Exception {
         String[] array = new String[10];
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        for (int i = 0; i < array.length; i++)
-        {
+        for (int i = 0; i < array.length; i++) {
             array[i] = br.readLine();
         }
-        for (int i = array.length - 1; i >= 0; i--)
-        {
+        for (int i = array.length - 1; i >= 0; i--) {
             System.out.println(array[i]);
         }
 

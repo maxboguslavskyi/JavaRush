@@ -46,16 +46,14 @@ public class Solution {
         private void printTime() throws InterruptedException {
             Thread.sleep(1000);
             seconds += 1;
-            if (hours == 23 && minutes == 59 && seconds == 60)
-            {
-                hours = 0; minutes = 0; seconds = 0;
-            }
-            else if (seconds == 60)
-            {
+            if (hours == 23 && minutes == 59 && seconds == 60) {
+                hours = 0;
+                minutes = 0;
+                seconds = 0;
+            } else if (seconds == 60) {
                 seconds = 0;
                 minutes += 1;
-                if ( minutes == 60)
-                {
+                if (minutes == 60) {
                     seconds = 0;
                     minutes = 0;
                     hours += 1;

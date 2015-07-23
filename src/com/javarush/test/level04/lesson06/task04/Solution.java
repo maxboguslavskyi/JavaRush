@@ -8,10 +8,8 @@ package com.javarush.test.level04.lesson06.task04;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
-public class Solution
-{
-    public static void main(String[] args) throws Exception
-    {
+public class Solution {
+    public static void main(String[] args) throws Exception {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
         System.out.println();
@@ -20,17 +18,13 @@ public class Solution
         System.out.println();
         String s2 = br.readLine();
 
-        if(s1.equals(s2)) {
+        if (s1.equals(s2)) {
             System.out.print("Имена идентичны");
-        }
-        else if (s1.length() == s2.length()) {
+        } else if (s1.length() == s2.length()) {
             System.out.print("Длины имен равны");
-        }
-        else {
+        } else {
             System.out.println();
         }
-
-
 
 
     }

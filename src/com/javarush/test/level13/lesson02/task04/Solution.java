@@ -5,33 +5,27 @@ package com.javarush.test.level13.lesson02.task04;
 2. Реализуй в нем интерфейсы Selectable с методом onSelect, Updatable с методом refresh.
 */
 
-public class Solution
-{
-    public static void main(String[] args) throws Exception
-    {
+public class Solution {
+    public static void main(String[] args) throws Exception {
     }
 
-    interface Selectable
-    {
+    interface Selectable {
         void onSelect();
     }
 
-    interface Updatable
-    {
+    interface Updatable {
         void refresh();
     }
 
     public class Screen implements Selectable, Updatable {
 
         @Override
-        public void onSelect()
-        {
+        public void onSelect() {
 
         }
 
         @Override
-        public void refresh()
-        {
+        public void refresh() {
 
         }
     }

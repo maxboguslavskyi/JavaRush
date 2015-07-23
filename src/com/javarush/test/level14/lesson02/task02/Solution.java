@@ -4,10 +4,8 @@ package com.javarush.test.level14.lesson02.task02;
 Исправь строчку 'Cat o = new Cat();' так, чтобы программа вывела "Bingo!"
 */
 
-public class Solution
-{
-    public static void main(String[] args)
-    {
+public class Solution {
+    public static void main(String[] args) {
         Cat o = new TomCat();
 
         boolean isCat = o instanceof Cat;
@@ -18,16 +16,13 @@ public class Solution
 
     }
 
-    interface Moveable
-    {
+    interface Moveable {
     }
 
-    static class Cat
-    {
+    static class Cat {
     }
 
-    static class TomCat extends Cat implements Moveable
-    {
+    static class TomCat extends Cat implements Moveable {
 
     }
 }

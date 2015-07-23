@@ -18,9 +18,9 @@ public class Solution {
         }
 
         @Override
-        public void run()
-        {
-            System.out.println("it's run method");;
+        public void run() {
+            System.out.println("it's run method");
+            ;
         }
     }
 }

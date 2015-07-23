@@ -7,10 +7,8 @@ package com.javarush.test.level04.lesson06.task05;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
-public class Solution
-{
-    public static void main(String[] args) throws Exception
-    {
+public class Solution {
+    public static void main(String[] args) throws Exception {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
         System.out.println();
@@ -20,11 +18,9 @@ public class Solution
         String s2 = br.readLine();
         int age = Integer.parseInt(s2);
 
-        if(age < 18) {
+        if (age < 18) {
             System.out.println("Подрасти еще");
-        }
-        else
-        {
+        } else {
             System.out.println();
         }
 

@@ -1,13 +1,11 @@
 package com.javarush.test.level14.lesson08.home01;
 
 /**
- * Created by Макс on 02.05.2015.
+ * Created by пїЅпїЅпїЅпїЅ on 02.05.2015.
  */
-public class SuspensionBridge implements Bridge
-{
+public class SuspensionBridge implements Bridge {
     @Override
-    public int getCarsCount()
-    {
+    public int getCarsCount() {
         return 500;
     }
 }

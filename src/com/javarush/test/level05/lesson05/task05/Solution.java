@@ -8,8 +8,7 @@ package com.javarush.test.level05.lesson05.task05;
 */
 
 public class Solution {
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         Cat cat1 = new Cat("Tom", 3, 1, 2);
         Cat cat2 = new Cat("Sam", 4, 2, 3);
         Cat cat3 = new Cat("Ken", 5, 3, 4);

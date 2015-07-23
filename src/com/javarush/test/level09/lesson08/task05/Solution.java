@@ -6,8 +6,7 @@ package com.javarush.test.level09.lesson08.task05;
 Можно использовать только один блок try..
 */
 
-public class Solution
-{
+public class Solution {
     public static void main(String[] args) {
         processExceptions(new Solution());
     }
@@ -30,7 +29,7 @@ public class Solution
         }
     }
 
-    public void method1(){
+    public void method1() {
         throw new NullPointerException();
     }
 

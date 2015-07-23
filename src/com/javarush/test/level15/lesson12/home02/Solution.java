@@ -18,14 +18,12 @@ public class Solution {
     public static class Duck implements Flyable, Movable {
 
         @Override
-        public void doFly()
-        {
+        public void doFly() {
             System.out.println("flying");
         }
 
         @Override
-        public void doMove()
-        {
+        public void doMove() {
             System.out.println("moving");
 
         }

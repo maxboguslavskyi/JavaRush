@@ -8,8 +8,7 @@ package com.javarush.test.level13.lesson06.task01;
 - Собака(Dog) может передвигаться и съесть кого-то.
 */
 
-public class Solution
-{
+public class Solution {
 
     public interface Moveable //может двигаться
     {
@@ -25,51 +24,47 @@ public class Solution
     {
         void eat();
     }
+
     public class Dog implements Moveable, Eat {
 
         @Override
-        public void eat()
-        {
+        public void eat() {
 
         }
 
         @Override
-        public void move()
-        {
+        public void move() {
 
         }
     }
+
     public class Cat implements Moveable, Eatable, Eat {
 
         @Override
-        public void eat()
-        {
+        public void eat() {
 
         }
 
         @Override
-        public void eaten()
-        {
+        public void eaten() {
 
         }
 
         @Override
-        public void move()
-        {
+        public void move() {
 
         }
     }
+
     public class Mouse implements Moveable, Eatable {
 
         @Override
-        public void eaten()
-        {
+        public void eaten() {
 
         }
 
         @Override
-        public void move()
-        {
+        public void move() {
 
         }
     }

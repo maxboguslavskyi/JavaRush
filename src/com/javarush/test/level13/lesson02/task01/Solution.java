@@ -7,14 +7,11 @@ package com.javarush.test.level13.lesson02.task01;
 4. Верни значение переменной READY_TO_GO_HOME в методе isReadyToGoHome.
 */
 
-public class Solution
-{
-    public static void main(String[] args) throws Exception
-    {
+public class Solution {
+    public static void main(String[] args) throws Exception {
     }
 
-    public interface Drink
-    {
+    public interface Drink {
         void askMore(String message);
 
         void sayThankYou();
@@ -22,37 +19,31 @@ public class Solution
         boolean isReadyToGoHome();
     }
 
-    public interface Alcohol extends Drink
-    {
+    public interface Alcohol extends Drink {
         boolean READY_TO_GO_HOME = false;
 
         void sleepOnTheFloor();
     }
 
-    public static class Beer implements Alcohol
-    {
+    public static class Beer implements Alcohol {
 
         @Override
-        public void sleepOnTheFloor()
-        {
+        public void sleepOnTheFloor() {
 
         }
 
         @Override
-        public void askMore(String message)
-        {
+        public void askMore(String message) {
 
         }
 
         @Override
-        public void sayThankYou()
-        {
+        public void sayThankYou() {
 
         }
 
         @Override
-        public boolean isReadyToGoHome()
-        {
+        public boolean isReadyToGoHome() {
             return READY_TO_GO_HOME;
         }
     }

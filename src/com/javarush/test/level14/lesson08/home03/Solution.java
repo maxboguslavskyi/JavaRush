@@ -21,58 +21,37 @@ import java.util.ArrayList;
 3.4. Вызывает метод enjoy(), если person имеет тип Proger.
 */
 
-public class Solution
-{
-    public static void main(String[] args) throws Exception
-    {
+public class Solution {
+    public static void main(String[] args) throws Exception {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         Person person = null;
         String key = null;
-        ArrayList <String> p = new ArrayList<String>();
-        while (true)
-        {
+        ArrayList<String> p = new ArrayList<String>();
+        while (true) {
             key = reader.readLine();
-            if (key.equals("user"))
-            {
+            if (key.equals("user")) {
 
                 p.add(key);
-            }
-
-            else if ( key.equals("looser"))
-            {
+            } else if (key.equals("looser")) {
                 p.add(key);
-            }
-            else if ( key.equals("coder") )
-            {
+            } else if (key.equals("coder")) {
                 p.add(key);
-            }
-            else if ( key.equals("proger"))
-            {
+            } else if (key.equals("proger")) {
                 p.add(key);
-            }
-            else break;
+            } else break;
         }
-        for (String per : p)
-        {
+        for (String per : p) {
             //создаем объект, пункт 2
-            if (per.equals("user"))
-            {
+            if (per.equals("user")) {
                 person = new Person.User();
 
-            }
-
-            else if ( per.equals("looser"))
-            {
+            } else if (per.equals("looser")) {
                 person = new Person.Looser();
 
-            }
-            else if ( per.equals("coder") )
-            {
+            } else if (per.equals("coder")) {
                 person = new Person.Coder();
 
-            }
-            else if (per.equals("proger"))
-            {
+            } else if (per.equals("proger")) {
                 person = new Person.Proger();
 
             }
@@ -81,13 +60,12 @@ public class Solution
         }
     }
 
-    private static void doWork(Person person)
-    {
+    private static void doWork(Person person) {
         if (person instanceof Person.Coder)
             ((Person.Coder) person).coding();
         else if (person instanceof Person.Looser)
             ((Person.Looser) person).doNothing();
-        else if ( person instanceof Person.Proger)
+        else if (person instanceof Person.Proger)
             ((Person.Proger) person).enjoy();
         else if (person instanceof Person.User)
             ((Person.User) person).live();

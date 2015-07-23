@@ -8,15 +8,14 @@ package com.javarush.test.level13.lesson02.task09;
 5. Метод speed возвращает значение типа Double и принимает один параметр типа Runable.
 */
 
-public class Solution
-{
-    public static void main(String[] args) throws Exception
-    {
+public class Solution {
+    public static void main(String[] args) throws Exception {
     }
 
     public interface Movable {
         Double speed();
     }
+
     public interface Runable extends Movable {
         Double speed(Runable something);
     }

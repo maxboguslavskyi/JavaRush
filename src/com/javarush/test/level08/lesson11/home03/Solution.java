@@ -10,16 +10,13 @@ import java.util.Map;
 4. Вывести содержимое Map на экран.
 */
 
-public class Solution
-{
-    public static void main(String[] args)
-    {
+public class Solution {
+    public static void main(String[] args) {
         Map<String, String> map = createPeopleList();
         printPeopleList(map);
     }
 
-    public static Map<String, String> createPeopleList()
-    {
+    public static Map<String, String> createPeopleList() {
         HashMap<String, String> map = new HashMap<String, String>();
         map.put("Петров", "Евгений");
         map.put("Сидоров", "Кирилл");
@@ -35,10 +32,8 @@ public class Solution
         return map;
     }
 
-    public static void printPeopleList(Map<String, String> map)
-    {
-        for (Map.Entry<String, String> s : map.entrySet())
-        {
+    public static void printPeopleList(Map<String, String> map) {
+        for (Map.Entry<String, String> s : map.entrySet()) {
             System.out.println(s.getKey() + " " + s.getValue());
         }
     }

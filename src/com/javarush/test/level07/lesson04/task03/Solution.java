@@ -10,23 +10,18 @@ import java.io.InputStreamReader;
 4. В каждую ячейку массива чисел записать длину строки из массива строк, индекс/номер ячейки которой совпадает с текущим индексом из массива чисел. Вывести содержимое массива чисел на экран, каждое значение выводить с новой строки.
 */
 
-public class Solution
-{
-    public static void main(String[] args) throws Exception
-    {
+public class Solution {
+    public static void main(String[] args) throws Exception {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         String[] list = new String[10];
         int[] array = new int[10];
-        for (int i = 0; i < list.length; i++)
-        {
+        for (int i = 0; i < list.length; i++) {
             list[i] = br.readLine();
         }
-        for (int i = 0; i < array.length; i++)
-        {
+        for (int i = 0; i < array.length; i++) {
             array[i] = list[i].length();
         }
-        for (int i = 0; i < array.length; i++)
-        {
+        for (int i = 0; i < array.length; i++) {
             System.out.println(array[i]);
         }
 

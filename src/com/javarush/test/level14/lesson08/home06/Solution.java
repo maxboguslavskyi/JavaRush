@@ -20,25 +20,19 @@ package com.javarush.test.level14.lesson08.home06;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
-public class Solution
-{
-    public static void main(String[] args) throws Exception
-    {
+public class Solution {
+    public static void main(String[] args) throws Exception {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         String s = null;
-        while (true)
-        {
+        while (true) {
             s = br.readLine();
-            if (s.equals("cartoon"))
-            {
+            if (s.equals("cartoon")) {
                 Movie movie = MovieFactory.getMovie(s);
                 System.out.println(movie.getClass().getSimpleName());
-            } else if (s.equals("triller"))
-            {
+            } else if (s.equals("triller")) {
                 Movie movie = MovieFactory.getMovie(s);
                 System.out.println(movie.getClass().getSimpleName());
-            } else if (s.equals("soapOpera"))
-            {
+            } else if (s.equals("soapOpera")) {
                 Movie movie = MovieFactory.getMovie(s);
                 System.out.println(movie.getClass().getSimpleName());
             } else break;
@@ -52,22 +46,17 @@ public class Solution
 
     }
 
-    static class MovieFactory
-    {
+    static class MovieFactory {
 
-        static Movie getMovie(String key)
-        {
+        static Movie getMovie(String key) {
             Movie movie = null;
 
             //создание объекта SoapOpera (мыльная опера) для ключа "soapOpera"
-            if ("soapOpera".equals(key))
-            {
+            if ("soapOpera".equals(key)) {
                 movie = new SoapOpera();
-            } else if ("cartoon".equals(key))
-            {
+            } else if ("cartoon".equals(key)) {
                 movie = new Cartoon();
-            } else if ("triller".equals(key))
-            {
+            } else if ("triller".equals(key)) {
                 movie = new Triller();
             }
 
@@ -76,21 +65,17 @@ public class Solution
         }
     }
 
-    static abstract class Movie
-    {
+    static abstract class Movie {
     }
 
-    static class SoapOpera extends Movie
-    {
+    static class SoapOpera extends Movie {
     }
 
-    static class Cartoon extends Movie
-    {
+    static class Cartoon extends Movie {
 
     }
 
-    static class Triller extends Movie
-    {
+    static class Triller extends Movie {
 
     }
 

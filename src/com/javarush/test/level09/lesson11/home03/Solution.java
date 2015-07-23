@@ -13,8 +13,7 @@ import java.util.List;
 Числа выводить с новой строки сохраняя порядок ввода
 */
 
-public class Solution
-{
+public class Solution {
     public static void main(String[] args) {
         readData();
     }
@@ -24,13 +23,11 @@ public class Solution
         ArrayList<Integer> list = new ArrayList<Integer>();
 
         try {
-            while (true)
-            {
+            while (true) {
                 list.add(Integer.parseInt(br.readLine()));
             }
         } catch (Exception e) {
-            for (int i = 0; i < list.size(); i++)
-            {
+            for (int i = 0; i < list.size(); i++) {
                 System.out.println(list.get(i));
             }
 

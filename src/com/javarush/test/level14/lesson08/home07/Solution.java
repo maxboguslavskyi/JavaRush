@@ -14,22 +14,18 @@ import java.util.List;
 4. Для трехкомнатных квартир (Apt3Room) вызвать метод clean3Rooms
 т.е. если объект типа Apt3Room, то вызвать у него метод clean3Rooms.
 */
-public class Solution
-{
-    public static void main(String[] args)
-    {
-        List<Apartament> apartaments = new ArrayList<Apartament>();
-        apartaments.add(new Apt1Room());
-        apartaments.add(new Apt2Room());
-        apartaments.add(new Apt3Room());
+public class Solution {
+    public static void main(String[] args) {
+        List<Apartment> apartments = new ArrayList<Apartment>();
+        apartments.add(new Apt1Room());
+        apartments.add(new Apt2Room());
+        apartments.add(new Apt3Room());
 
-        cleanAllApartaments(apartaments);
+        cleanAllApartments(apartments);
     }
 
-    public static void cleanAllApartaments(List<Apartament> apartaments)
-    {
-        for (int i = 0; i < apartaments.size(); i++)
-        {
+    public static void cleanAllApartments(List<Apartment> apartaments) {
+        for (int i = 0; i < apartaments.size(); i++) {
             if (apartaments.get(i) instanceof Apt1Room)
                 ((Apt1Room) apartaments.get(i)).clean1Room();
             else if (apartaments.get(i) instanceof Apt2Room)
@@ -39,30 +35,23 @@ public class Solution
         }
     }
 
-    static interface Apartament
-    {
+    static interface Apartment {
     }
 
-    static class Apt1Room implements Apartament
-    {
-        void clean1Room()
-        {
+    static class Apt1Room implements Apartment {
+        void clean1Room() {
             System.out.println("1 room is cleaned");
         }
     }
 
-    static class Apt2Room implements Apartament
-    {
-        void clean2Rooms()
-        {
+    static class Apt2Room implements Apartment {
+        void clean2Rooms() {
             System.out.println("2 rooms are cleaned");
         }
     }
 
-    static class Apt3Room implements Apartament
-    {
-        void clean3Rooms()
-        {
+    static class Apt3Room implements Apartment {
+        void clean3Rooms() {
             System.out.println("3 rooms are cleaned");
         }
     }

@@ -25,7 +25,6 @@ public class Solution {
     }
 
 
-
     public static void print(Object i) {
         System.out.println("Это Object");
     }

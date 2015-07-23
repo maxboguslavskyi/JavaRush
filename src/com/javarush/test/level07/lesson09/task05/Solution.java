@@ -10,13 +10,11 @@ import java.util.ArrayList;
 3. Используя цикл for выведи результат на экран, каждое значение с новой строки.
 */
 
-public class Solution
-{
+public class Solution {
     public static void main(String[] args) throws Exception {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         ArrayList<String> list = new ArrayList<String>();
-        for (int i = 0; i < 10; i++)
-        {
+        for (int i = 0; i < 10; i++) {
             list.add(br.readLine());
 
         }
@@ -32,7 +30,7 @@ public class Solution
 
         ArrayList<String> list1 = new ArrayList<String>();
 
-        for (String value: list) {
+        for (String value : list) {
             list1.add(value);
             list1.add(value);
         }

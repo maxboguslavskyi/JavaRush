@@ -16,21 +16,17 @@ public class Solution {
 
     static {
 
-        try
-        {
+        try {
             BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
             A = Integer.parseInt(reader.readLine());
             B = Integer.parseInt(reader.readLine());
             reader.close();
-        }
-        catch (IOException e)
-        {
+        } catch (IOException e) {
             e.printStackTrace();
         }
     }
 
     public static final int MIN = min(A, B);
-
 
 
     public static void main(String[] args) {

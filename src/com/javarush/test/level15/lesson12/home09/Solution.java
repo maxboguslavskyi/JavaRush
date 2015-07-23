@@ -30,22 +30,26 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class Solution {
-    public static void main(String[] args) throws IOException
-    {
+    public static void main(String[] args) throws IOException {
 
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         String url = reader.readLine();
-        String afterQuestionMark = url.substring(url.indexOf("?")+1);
-        String [] tokens = afterQuestionMark.split("(\\&+)|(\\?+)");
+        String afterQuestionMark = url.substring(url.indexOf("?") + 1);
+        String[] tokens = afterQuestionMark.split("(\\&+)|(\\?+)");
 
         ArrayList<String> objList = new ArrayList<String>();
-        Pattern objMutch = Pattern.compile("^obj=.*");
-        for(String a:tokens){
-            if(!a.equals("")){
-                Matcher matcher = objMutch.matcher(a);
-                if(matcher.find()){ objList.add(a.substring(a.indexOf("=")+1)); }
-                if(a.contains("=")){ System.out.print(a.substring(0,(a.indexOf("="))) +" "); }
-                else {System.out.print(a+" ");}
+        Pattern objMatch = Pattern.compile("^obj=.*");
+        for (String a : tokens) {
+            if (!a.equals("")) {
+                Matcher matcher = objMatch.matcher(a);
+                if (matcher.find()) {
+                    objList.add(a.substring(a.indexOf("=") + 1));
+                }
+                if (a.contains("=")) {
+                    System.out.print(a.substring(0, (a.indexOf("="))) + " ");
+                } else {
+                    System.out.print(a + " ");
+                }
             }
         }
 
@@ -53,14 +57,16 @@ public class Solution {
         Pattern stringPattern = Pattern.compile("[A-Za-z]");
 
         System.out.println();
-        for(String a:objList){
+        for (String a : objList) {
             Matcher matcher = stringPattern.matcher(a);
             Matcher matcher1 = doublePattern.matcher(a);
-            if(matcher.find()){alert(a);}
-            else  if(matcher1.find()){alert(Double.parseDouble(a));}
+            if (matcher.find()) {
+                alert(a);
+            } else if (matcher1.find()) {
+                alert(Double.parseDouble(a));
+            }
         }
     }
-
 
 
     public static void alert(double value) {

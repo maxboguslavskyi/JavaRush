@@ -4,8 +4,7 @@ package com.javarush.test.level06.lesson05.task02;
 В каждом классе Cat и Dog написать метод finalize, который выводит на экран текст о том, что такой-то объект уничтожен.
 */
 
-public class Cat
-{
+public class Cat {
     String name;
 
     protected void finalize() throws Throwable {
@@ -14,8 +13,7 @@ public class Cat
 
 }
 
-class Dog
-{
+class Dog {
     String name;
 
     protected void finalize() throws Throwable {

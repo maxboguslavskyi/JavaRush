@@ -21,19 +21,17 @@ import java.util.Collections;
 17
 */
 
-public class Solution
-{
-    public static void main(String[] args) throws Exception
-    {
+public class Solution {
+    public static void main(String[] args) throws Exception {
         ArrayList<Integer> list = new ArrayList<Integer>();
-        BufferedReader reader  = new BufferedReader(new InputStreamReader(System.in));
-        for(int i = 0; i < 5 ; i++){
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        for (int i = 0; i < 5; i++) {
             int s = Integer.parseInt(reader.readLine());
             list.add(s);
         }
 
         Collections.sort(list);
-        for(int i = 0; i < list.size(); i++){
+        for (int i = 0; i < list.size(); i++) {
             System.out.println(list.get(i));
         }
     }

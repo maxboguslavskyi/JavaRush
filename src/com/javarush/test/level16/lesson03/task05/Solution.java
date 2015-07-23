@@ -35,12 +35,11 @@ public class Solution {
         }
 
 
-        public void run()
-        {
+        public void run() {
             Date start = startPlaying();
             sleepNSeconds(1);
             Date end = stopPlaying();
-            System.out.println("Playing " + (end.getTime()-start.getTime()) + " ms");
+            System.out.println("Playing " + (end.getTime() - start.getTime()) + " ms");
         }
     }
 

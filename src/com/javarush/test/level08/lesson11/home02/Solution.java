@@ -14,10 +14,8 @@ import java.util.Set;
 6. Реализовать метод printPets, котороый должен выводить на экран всех животных, которые в нем есть. Каждое животное с новой строки
 */
 
-public class Solution
-{
-    public static void main(String[] args)
-    {
+public class Solution {
+    public static void main(String[] args) {
         Set<Cat> cats = createCats();
         Set<Dog> dogs = createDogs();
 
@@ -28,51 +26,47 @@ public class Solution
         printPets(pets);
     }
 
-    public static Set<Cat> createCats()
-    {
+    public static Set<Cat> createCats() {
         HashSet<Cat> result = new HashSet<Cat>();
 
-        for (int i = 0; i < 4; i++)
-        {
+        for (int i = 0; i < 4; i++) {
             result.add(new Cat());
         }
 
         return result;
     }
 
-    public static Set<Dog> createDogs()
-    {
+    public static Set<Dog> createDogs() {
         HashSet<Dog> dog = new HashSet<Dog>();
-        for (int i = 0; i < 3; i++)
-        {
+        for (int i = 0; i < 3; i++) {
             dog.add(new Dog());
         }
         return dog;
     }
 
-    public static Set<Object> join(Set<Cat> cats, Set<Dog> dogs)
-    {
+    public static Set<Object> join(Set<Cat> cats, Set<Dog> dogs) {
         HashSet<Object> pets = new HashSet<Object>();
         pets.addAll(cats);
         pets.addAll(dogs);
         return pets;
     }
 
-    public static void removeCats(Set<Object> pets, Set<Cat> cats)
-    {
+    public static void removeCats(Set<Object> pets, Set<Cat> cats) {
         Iterator<Object> it = pets.iterator();
         if (it.hasNext()) {
             pets.removeAll(cats);
         }
     }
 
-    public static void printPets(Set<Object> pets)
-    {
+    public static void printPets(Set<Object> pets) {
         for (Object object : pets) {
             System.out.println(pets);
         }
     }
 
-    public static class Cat {}
-    public static class Dog {}
+    public static class Cat {
+    }
+
+    public static class Dog {
+    }
 }

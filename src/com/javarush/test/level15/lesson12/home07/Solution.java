@@ -14,11 +14,11 @@ import java.util.List;
 
 public class Solution {
     public static List<String> lines = new ArrayList<String>();
+
     static {
         try {
             BufferedReader reader = new BufferedReader(new FileReader(Constants.FILE_NAME));
-            while (true)
-            {
+            while (true) {
                 String output = reader.readLine();
                 if (output != null)
                     lines.add(output);
@@ -27,7 +27,8 @@ public class Solution {
 
             }
             reader.close();
-        } catch (IOException ignored) {}
+        } catch (IOException ignored) {
+        }
 
     }
 

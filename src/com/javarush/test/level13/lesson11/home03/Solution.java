@@ -8,10 +8,8 @@ package com.javarush.test.level13.lesson11.home03;
 
 import java.io.*;
 
-public class Solution
-{
-    public static void main(String[] args) throws IOException
-    {
+public class Solution {
+    public static void main(String[] args) throws IOException {
         //открываем входящий поток, читающий с консоли
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         String filename = reader.readLine();
@@ -22,7 +20,7 @@ public class Solution
         //пока файл содержит данные
         //печатаем их
         //обязательно делаем вывод такой, чтобы печатались символы
-        while (inputStream.available()>0){
+        while (inputStream.available() > 0) {
             System.out.print((char) inputStream.read());
         }
 

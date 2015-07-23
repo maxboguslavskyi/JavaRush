@@ -17,11 +17,9 @@ public class Solution {
     //Add your code below - добавь код ниже
     public static class TestThread extends Thread {
         @Override
-        public void run()
-        {
+        public void run() {
             try {
-                while (!isInterrupted())
-                {
+                while (!isInterrupted()) {
                     Thread.sleep(1000);
                 }
             } catch (InterruptedException e) {

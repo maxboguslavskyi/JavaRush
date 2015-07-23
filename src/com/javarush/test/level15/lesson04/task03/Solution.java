@@ -11,7 +11,6 @@ public class Solution {
     }
 
 
-
     public static void print(long l) {
         System.out.println("Я буду Java прогером!");
     }

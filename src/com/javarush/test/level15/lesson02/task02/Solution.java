@@ -27,16 +27,14 @@ public class Solution {
 
     public static class Goose extends SmallAnimal {
         @Override
-        public String getSize()
-        {
+        public String getSize() {
             return "Гусь маленький, " + super.getSize();
         }
     }
 
     public static class Dragon extends BigAnimal {
         @Override
-        public String getSize()
-        {
+        public String getSize() {
             return "Дракон большой, " + super.getSize();
         }
     }

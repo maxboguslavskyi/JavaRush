@@ -12,8 +12,7 @@ import java.util.List;
 3. Найти минимальное число среди элементов списка - метод getMinimum.
 */
 
-public class Solution
-{
+public class Solution {
     public static void main(String[] args) throws Exception {
         List<Integer> integerList = getIntegerList();
         System.out.println(getMinimum(integerList));
@@ -21,8 +20,7 @@ public class Solution
 
     public static int getMinimum(List<Integer> array) {
         int minimum = Integer.MAX_VALUE;
-        for (int i = 0; i <array.size(); i++)
-        {
+        for (int i = 0; i < array.size(); i++) {
             if (array.get(i) < minimum) minimum = array.get(i);
         }
         return minimum;
@@ -32,8 +30,7 @@ public class Solution
         List<Integer> list = new ArrayList<Integer>();
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int N = Integer.parseInt(br.readLine());
-        for (int i = 0; i < N; i++)
-        {
+        for (int i = 0; i < N; i++) {
             list.add(Integer.parseInt(br.readLine()));
 
         }

@@ -17,7 +17,7 @@ public class Solution {
     }
 
     public static void divisionByZero() {
-        int a = 10/0;
+        int a = 10 / 0;
         System.out.println(a);
     }
 

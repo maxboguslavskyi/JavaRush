@@ -11,34 +11,29 @@ double readDouble() – читает с клавиатуры дробное чи
 void readLn() – ждет нажатия enter [использовать readString()]
 */
 
-public class ConsoleReader
-{
-    public static String readString() throws Exception
-    {
+public class ConsoleReader {
+    public static String readString() throws Exception {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         String s = br.readLine();
         return s;
 
     }
 
-    public static int readInt() throws Exception
-    {
+    public static int readInt() throws Exception {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int n = Integer.parseInt(br.readLine());
         return n;
 
     }
 
-    public static double readDouble() throws Exception
-    {
+    public static double readDouble() throws Exception {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         double d = Double.parseDouble(br.readLine());
         return d;
 
     }
 
-    public static void readLn() throws Exception
-    {
+    public static void readLn() throws Exception {
         readString();
 
     }

@@ -8,15 +8,13 @@ package com.javarush.test.level04.lesson10.task05;
 ...
 */
 
-public class Solution
-{
-    public static void main(String[] args) throws Exception
-    {
+public class Solution {
+    public static void main(String[] args) throws Exception {
         int i = 1, j;
-        while(i < 11) {
+        while (i < 11) {
 
             j = 1;
-            while(j < 11) {
+            while (j < 11) {
                 System.out.print(i * j + " ");
                 j++;
             }

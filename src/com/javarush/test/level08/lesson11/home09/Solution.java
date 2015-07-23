@@ -13,27 +13,22 @@ JANUARY 1 2000 = true
 JANUARY 2 2020 = false
 */
 
-public class Solution
-{
-    public static void main(String[] args) throws ParseException
-    {
+public class Solution {
+    public static void main(String[] args) throws ParseException {
         System.out.println(isDateOdd("MAY 1 2013"));
     }
 
-    public static boolean isDateOdd(String date) throws ParseException
-    {
-        SimpleDateFormat formater = new SimpleDateFormat("MMM d yyyy", Locale.US);
-        Date first = formater.parse(date);
+    public static boolean isDateOdd(String date) throws ParseException {
+        SimpleDateFormat formatter = new SimpleDateFormat("MMM d yyyy", Locale.US);
+        Date first = formatter.parse(date);
         Date second = new Date();
         long distance = second.getTime() - first.getTime();
         int pri = 24 * 60 * 60 * 1000;
         int dateCount = (int) (distance / pri);
 
-        if (dateCount % 2 == 0)
-        {
+        if (dateCount % 2 == 0) {
             return true;
-        } else
-        {
+        } else {
             return false;
         }
     }

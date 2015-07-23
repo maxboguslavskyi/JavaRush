@@ -6,24 +6,20 @@ import java.util.ArrayList;
 Создать массив, элементами которого будут списки строк. Заполнить массив любыми данными и вывести их на экран.
 */
 
-public class Solution
-{
-    public static void main(String[] args)
-    {
-        ArrayList<String>[] arrayOfStringList =  createList();
+public class Solution {
+    public static void main(String[] args) {
+        ArrayList<String>[] arrayOfStringList = createList();
         printList(arrayOfStringList);
     }
 
-    public static ArrayList<String>[] createList()
-    {
+    public static ArrayList<String>[] createList() {
         ArrayList<String>[] arrayOfStringList = new ArrayList[3];
 
         ArrayList<String> list1 = new ArrayList<String>();
         ArrayList<String> list2 = new ArrayList<String>();
         ArrayList<String> list3 = new ArrayList<String>();
 
-        for (int i = 0; i < arrayOfStringList.length; i++)
-        {
+        for (int i = 0; i < arrayOfStringList.length; i++) {
             list1.add("123");
             list2.add("12345");
             list3.add("qwerty");
@@ -35,12 +31,9 @@ public class Solution
         return arrayOfStringList;
     }
 
-    public static void printList(ArrayList<String>[] arrayOfStringList)
-    {
-        for (ArrayList<String> list: arrayOfStringList)
-        {
-            for (String s : list)
-            {
+    public static void printList(ArrayList<String>[] arrayOfStringList) {
+        for (ArrayList<String> list : arrayOfStringList) {
+            for (String s : list) {
                 System.out.println(s);
             }
         }

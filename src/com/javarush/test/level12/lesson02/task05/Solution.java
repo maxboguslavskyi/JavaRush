@@ -4,18 +4,15 @@ package com.javarush.test.level12.lesson02.task05;
 Написать метод, который определяет, объект какого класса ему передали, и возвращает результат – одно значение из: «Корова», «Кит», «Собака», «Неизвестное животное».
 */
 
-public class Solution
-{
-    public static void main(String[] args)
-    {
+public class Solution {
+    public static void main(String[] args) {
         System.out.println(getObjectType(new Cow()));
         System.out.println(getObjectType(new Dog()));
         System.out.println(getObjectType(new Whale()));
         System.out.println(getObjectType(new Pig()));
     }
 
-    public static String getObjectType(Object o)
-    {
+    public static String getObjectType(Object o) {
         String res = "Неизвестное животное";
         if (o instanceof Cow) res = "Корова";
         if (o instanceof Whale) res = "Кит";
@@ -24,19 +21,15 @@ public class Solution
         return res;
     }
 
-    public static class Cow
-    {
+    public static class Cow {
     }
 
-    public static class Dog
-    {
+    public static class Dog {
     }
 
-    public static class Whale
-    {
+    public static class Whale {
     }
 
-    public static class Pig
-    {
+    public static class Pig {
     }
 }

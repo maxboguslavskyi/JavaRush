@@ -9,39 +9,34 @@ package com.javarush.test.level05.lesson09.task05;
 -	создаём копию другого прямоугольника (он и передаётся в параметрах)
 */
 
-public class Rectangle
-{
+public class Rectangle {
     private int top;
     private int left;
     private int width;
     private int height;
 
-    public Rectangle( int left, int top, int width, int height )
-    {
+    public Rectangle(int left, int top, int width, int height) {
         this.left = left;
         this.top = top;
         this.width = width;
         this.height = height;
     }
 
-    public Rectangle( int left, int top )
-    {
+    public Rectangle(int left, int top) {
         this.left = left;
         this.top = top;
         this.width = 0;
         this.height = 0;
     }
 
-    public Rectangle( int left, int top, int width )
-    {
+    public Rectangle(int left, int top, int width) {
         this.left = left;
         this.top = top;
         this.width = width;
         this.height = width;
     }
 
-    public Rectangle( Rectangle rectangle )
-    {
+    public Rectangle(Rectangle rectangle) {
         this.left = rectangle.left;
         this.top = rectangle.top;
         this.width = rectangle.width;

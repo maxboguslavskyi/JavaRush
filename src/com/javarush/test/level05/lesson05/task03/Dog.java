@@ -5,25 +5,26 @@ package com.javarush.test.level05.lesson05.task03;
 Создайте геттеры и сеттеры для всех переменных класса Dog.
 */
 
-public class Dog
-{
+public class Dog {
     String name;
     int age;
 
     public void setName(String name) {
         this.name = name;
     }
+
     public String getName() {
         return name;
     }
-    public void setAge(int age)
-    {
+
+    public void setAge(int age) {
         this.age = age;
     }
+
     public int getAge() {
         return age;
 
-}
+    }
 }
 
 

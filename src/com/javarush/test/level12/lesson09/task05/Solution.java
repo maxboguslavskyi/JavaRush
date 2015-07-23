@@ -7,29 +7,28 @@ package com.javarush.test.level12.lesson09.task05;
 Объяви класс Human абстрактным.
 */
 
-public class Solution
-{
-    public static void main(String[] args)
-    {
+public class Solution {
+    public static void main(String[] args) {
 
     }
+
     public abstract class Human implements Run, Swim {
 
         @Override
-        public void run()
-        {
+        public void run() {
 
         }
 
         @Override
-        public void swim()
-        {
+        public void swim() {
 
         }
     }
+
     public interface Run {
         void run();
     }
+
     public interface Swim {
         void swim();
     }

@@ -45,8 +45,7 @@ public class Solution {
 
         public void printCountdown() throws InterruptedException {
 
-            for (int i = countFrom - 1; i > -1; i--)
-            {
+            for (int i = countFrom - 1; i > -1; i--) {
                 Thread.sleep(500);
                 System.out.println(list.get(i));
 

@@ -22,14 +22,12 @@ public class Solution {
 
     public static void reset() {
 
-        try
-        {
+        try {
             BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
             String s = reader.readLine();
             if (s.equals("helicopter")) {
                 result = new Helicopter();
-            }
-            else if (s.equals("plane")) {
+            } else if (s.equals("plane")) {
                 int b = Integer.parseInt(reader.readLine());
                 result = new Plane(5);
             }

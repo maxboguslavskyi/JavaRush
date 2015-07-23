@@ -4,8 +4,7 @@ package com.javarush.test.level06.lesson11.home04;
 Расставьте минимальное количество static-ов, чтобы код начал работать, и программа успешно завершилась
 */
 
-public class Solution
-{
+public class Solution {
     public static int step;
 
     public static void main(String[] args) {

@@ -9,18 +9,17 @@ import java.io.InputStreamReader;
 Вывести на экран максимальное и минимальное числа через пробел.
 */
 
-public class Solution{
+public class Solution {
 
-    public static void main(String[] args) throws IOException    {
+    public static void main(String[] args) throws IOException {
 
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
         int array[] = new int[20];
-        int  maximum = Integer.MIN_VALUE;
-        int  minimum = Integer.MAX_VALUE;
+        int maximum = Integer.MIN_VALUE;
+        int minimum = Integer.MAX_VALUE;
 
-        for (int i = 0; i < array.length; i++)
-        {
+        for (int i = 0; i < array.length; i++) {
             array[i] = Integer.parseInt(reader.readLine());
             if (array[i] < minimum)
                 minimum = array[i];

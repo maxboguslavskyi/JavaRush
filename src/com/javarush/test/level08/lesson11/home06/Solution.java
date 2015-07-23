@@ -8,10 +8,8 @@ package com.javarush.test.level08.lesson11.home06;
 
 import java.util.ArrayList;
 
-public class Solution
-{
-    public static void main(String[] args)
-    {
+public class Solution {
+    public static void main(String[] args) {
         ArrayList<Human> children1 = new ArrayList<Human>();
         Human Child1 = new Human("child1", true, 5, new ArrayList<Human>());
         Human Child2 = new Human("child2", true, 5, new ArrayList<Human>());
@@ -34,7 +32,7 @@ public class Solution
         Human gDad1 = new Human("gmom1", false, 56, children2);
 
         Human gMom2 = new Human("gmom2", false, 56, children3);
-        Human gDad2= new Human("gmom2", false, 56, children3);
+        Human gDad2 = new Human("gmom2", false, 56, children3);
 
         System.out.println(gDad1);
         System.out.println(gDad2);
@@ -49,15 +47,13 @@ public class Solution
         System.out.println(Child3);
     }
 
-    public static class Human
-    {
+    public static class Human {
         private String name;
         private Boolean sex;
         private int age;
         private ArrayList<Human> children;
 
-        public Human (String name, Boolean sex, int age, ArrayList<Human> children)
-        {
+        public Human(String name, Boolean sex, int age, ArrayList<Human> children) {
             this.name = name;
             this.sex = sex ? true : false;
             this.age = age;
@@ -65,22 +61,19 @@ public class Solution
         }
 
 
-        public String toString()
-        {
+        public String toString() {
             String text = "";
             text += "Имя: " + this.name;
             text += ", пол: " + (this.sex ? "мужской" : "женский");
             text += ", возраст: " + this.age;
 
             int childCount = this.children.size();
-            if (childCount > 0)
-            {
-                text += ", дети: "+this.children.get(0).name;
+            if (childCount > 0) {
+                text += ", дети: " + this.children.get(0).name;
 
-                for (int i = 1; i < childCount; i++)
-                {
+                for (int i = 1; i < childCount; i++) {
                     Human child = this.children.get(i);
-                    text += ", "+child.name;
+                    text += ", " + child.name;
                 }
             }
 

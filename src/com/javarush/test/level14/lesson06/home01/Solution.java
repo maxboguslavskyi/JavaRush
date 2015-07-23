@@ -25,15 +25,13 @@ package com.javarush.test.level14.lesson06.home01;
 9. Все созданные вами классы должны быть в отдельных файлах
 */
 
-public class Solution
-{
-    public static void main(String[] args)
-    {
+public class Solution {
+    public static void main(String[] args) {
         Hen hen = HenFactory.getHen(Country.BELARUS);
         hen.getCountOfEggsPerMonth();
     }
 
-    static  class HenFactory {
+    static class HenFactory {
         static Hen getHen(String country) {
             Hen hen = null;
 

@@ -6,10 +6,8 @@ String s = null;
 String m = s.toLowerCase();
 */
 
-public class Solution
-{
-    public static void main(String[] args) throws Exception
-    {
+public class Solution {
+    public static void main(String[] args) throws Exception {
 
         try {
             String s = null;
@@ -17,8 +15,6 @@ public class Solution
         } catch (NullPointerException e) {
             System.out.println(e);
         }
-
-
 
 
     }

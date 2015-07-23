@@ -11,19 +11,15 @@ import java.io.InputStreamReader;
 8888
 */
 
-public class Solution
-{
-    public static void main(String[] args) throws Exception
-    {
+public class Solution {
+    public static void main(String[] args) throws Exception {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
         int m = Integer.parseInt(br.readLine());
         int n = Integer.parseInt(br.readLine());
 
-        for (int i = 0; i < m; i++)
-        {
-            for (int j = 1; j < n; j++)
-            {
+        for (int i = 0; i < m; i++) {
+            for (int j = 1; j < n; j++) {
                 System.out.print(8);
             }
             System.out.println(8);
