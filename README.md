@@ -1,1 +1,1 @@
-# JavaRush
+# Java Rush
